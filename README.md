@@ -38,3 +38,12 @@ TODO:
   * support `start` and `stop` tasks:
     * ``./poxy.py start``: should begin the normal procedure described above.
     * ``./poxy.py stop``: would be expected to destroy the instance.
+
+USAGE:
+------
+  ```
+./poxy.py /path/to/config.json 2> debug 
+  ``` 
+if it's correctly configured it will printout the Digital Ocean json structure and it will try to connect to the first instance available using the given `private_key`
+
+This is an early version, not expect it to work and have a fire extinguisher close to you.
