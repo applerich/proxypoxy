@@ -28,7 +28,8 @@ The current config file syntax should contain the following fields
         "private": "/path/to/private_key",
         "public": "/path/to/public_key"
       },
-      "port": 
+      "username": "",
+      "port": 8080
     }
 }
 ```

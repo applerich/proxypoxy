@@ -40,8 +40,9 @@ for network_4 in instance["networks"]["v4"]:
         ip_address = network_4["ip_address"]
         print >> sys.stderr, network_4["ip_address"]
 
-proxy.connect(ip_address, data["socks"]["port"]) 
- 
+proxy.connect(data["socks"]["username"], ip_address, data["socks"]["port"]) 
+proxy.just_wait()
+
 #  
 #  for instance in instances["droplets"]:
 #      print >> sys.stderr, instance["name"]
